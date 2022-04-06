@@ -3,6 +3,7 @@
 <body>
   <!-- Navigation -->
 
+ <%- include('partials/_navigation.ejs') -%> 
 
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('../public/img/home-bg.jpg')">
@@ -24,7 +25,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
-          <a href="../post.html">
+          <a href="../post">
             <h2 class="post-title">
               Man must explore, and this is exploration at its greatest
             </h2>
@@ -38,7 +39,7 @@
         </div>
         <hr>
         <div class="post-preview">
-          <a href="../post.html">
+          <a href="../post">
             <h2 class="post-title">
               I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
             </h2>
@@ -49,7 +50,7 @@
         </div>
         <hr>
         <div class="post-preview">
-          <a href="../post.html">
+          <a href="../post">
             <h2 class="post-title">
               Science has not yet mastered prophecy
             </h2>
@@ -63,7 +64,7 @@
         </div>
         <hr>
         <div class="post-preview">
-          <a href="../post.html">
+          <a href="../post">
             <h2 class="post-title">
               Failure is not an option
             </h2>
@@ -87,7 +88,7 @@
   <hr>
 
   <!-- Footer -->
-
+  <%- include('partials/_footer.ejs') -%> 
 
   <!-- Bootstrap core JavaScript -->
   <script src="../public/vendor/jquery/jquery.min.js"></script>

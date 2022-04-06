@@ -7,20 +7,32 @@ const myLoger = (req, res, next) => {
   next();
 };
 
+//EJS 
+app.set('view engine', 'ejs');
+
 //MIDDLEWARE
 app.use(express.static('public'));
 app.use(myLoger);
 
 
 app.get('/', (req, res) => {
+    res.render('index');
+});
 
-    const photo = {
-        id: 1,
-        name: "Photo Name",
-        description: "Photo description"
-    }
-    res.send(photo)
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
+app.get('/add_post', (req, res) => {
+    res.render('add_post');
+});
+
+app.get('/post', (req, res) => {
+    res.render('post');
 })
+
+
+
 
 const port = 3000;
 app.listen(port, () => {
