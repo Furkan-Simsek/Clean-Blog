@@ -14,10 +14,11 @@
   "author": "Furkan Şimşek <tcfurkansimsek@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Furkan-Simsek/PCAT/issues"
+    "url": "https://github.com/Furkan-Simsek/Clean-Blog/issues"
   },
-  "homepage": "https://github.com/Furkan-Simsek/PCAT#readme",
+  "homepage": "https://github.com/Furkan-Simsek/Clean-Blog#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
   }
